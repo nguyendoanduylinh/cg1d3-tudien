@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nhaptu = prompt("Nhap tu: ");
+      let tienganh = ["dog", "cat", "horse", "mouse", "chicken"];
+      let tiengviet = ["chó", "mèo", "ngựa", "chuột", "gà"];
+      let xuathien = false;
+      for (index = 0; index < tienganh.length; index++) {
+        if (nhaptu == tienganh[index]) {
+          xuathien = true;
+          alert(`Từ tiếng anh "${nhaptu}" có nghĩa là "${tiengviet[index]}"`);
+          break;
+        }
+      }
+      if (xuathien == false) {
+        alert(`Không tìm thấy từ này trong từ điển`);
+      }
+    </script>
+  </body>
+</html>
